@@ -1,3 +1,85 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+.container{
+    width:80vw;
+    margin:0 auto;
+    max-width:800px;
+}
+
+
 body{
-    background-color:grey;
+    background-color:#4274DB;
+   font-family: 'Architects Daughter', cursive;
+   margin:0;
+}
+.primary{
+    background-color:#DB6C58;
+    text-align:center;
+    color:white;
+    text-shadow:-.5px -.5px black;
+    padding:40px 40px 20px 40px;
+}
+header.primary h1{
+    font-size: 3.2rem;
+    margin:20px 0px;
+}
+header.primary h1 a{
+    color:white;
+    text-decoration:none;
+}
+header.primary h2{
+    font-size:2em;
+    margin:20px auto 40px;
+}
+header.primary nav li{
+    list-style-type:none;
+}
+header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:0;
+    max-width:900px;
+    margin:0 auto;
+}
+header.primary nav a:link,header.primary nav a:visited{
+    color:white;
+    text-decoration:none;
+    background-color:black;
+    background-color:rgba(0,0,0,.5);
+    padding:8px 16px;
+    border-radius:20px;
+    border:2px solid silver;
+    transition:.6s;
+}
+header.primary nav a:hover,header.primary nav a:active{
+    color:white;
+    text-decoration:none;
+    background-color:black;
+    padding:8px 16px;
+    border-radius:20px;
+    border:2px solid silver;
+}
+
+@media screen and (max-width:650px){
+
+header.primary nav ul{
+
+    flex-direction:column;
+    margin:0 auto;
+
+}
+header.primary nav ul li{
+    margin-bottom:20px;
+}
 }
