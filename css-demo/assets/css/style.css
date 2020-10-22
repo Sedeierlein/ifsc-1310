@@ -8,7 +8,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
+/*           utility                     */
 
 .container{
     width:80vw;
@@ -16,12 +16,29 @@ html {
     max-width:800px;
 }
 
+.img-right{
+    float:right;
+    margin:10px;
+}
+
+.img-left{
+    float:left;
+    margin:10px;
+}
+.img-center{
+    display:block;
+    margin:10px auto;
+    
+}
+
+/*              responsive                 */
+
 img{
     max-width:100%;
     height:auto;
 }
-
-
+ /*              global resource               */
+ 
 body{
     background-color:teal;
    font-family: 'Architects Daughter', cursive;
@@ -149,11 +166,11 @@ aside .container{
 aside article.widget{
     width:35vw;
 }
-aside article a:link,aside article a:visited{
+aside a:link,aside a:visited{
     color:white;
-    display:block;
+    
 }
-aside article a:hover,aside article a:active{
+aside a:hover,aside a:active{
     text-decoration:none;
 }
 aside article footer{
@@ -181,9 +198,52 @@ footer#colophon{
 #additional-elements p{
   line-height:1.5;
 }
-
-
 #additional-elements h3{
 border-left:5px solid green;
 padding:3px,7px;
+}
+caption{
+    font-weight:bold;
+    font-size:1.2rem;
+}
+table{
+    width:100%;
+    border:2px solid green;
+}
+th{
+    background:red;
+    padding:3px;
+}
+td{
+    border:1px solid green;
+}
+tr:nth-child(odd){
+    background:gray;
+}
+tr:hover{
+    background:lightblue;
+}
+#additional-elements ul ul{
+    list-style-type:square;
+}
+
+#additional-elements dl{
+  
+}
+
+#additional-elements dt{
+font-weight:bold;
+}
+
+#additional-elements dd{
+    margin:0;
+}
+dd + dt{
+    margin-top:20px;
+}
+#additional-elements blockquote{
+    background-color:rgba(0,0,0,.1);
+    padding:40px;
+    border-top:5px solid #c0c0c0;
+    border-bottom:5px solid #c0c0c0;
 }
